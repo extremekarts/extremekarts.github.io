@@ -1,0 +1,31 @@
+<div id="gallery" class="wow fadeIn">
+  <div id="gallery-carousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      {% for image in site.data.gallery_images %}
+      <li data-target="#gallery-carousel" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.first %}active{% endif %}"></li>
+      {% endfor %}
+    </ol>
+    <!-- /.carousel-indicators -->
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      {% for image in site.data.gallery_images %}
+        <div class="item {% if forloop.first %}active{% endif %}">
+          <img src="{{ image.path }}" alt="{{ image.alt }}" data-no-retina>
+        </div>
+      {% endfor %}
+    </div>
+    <!-- /.carousel-inner -->
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#gallery-carousel" role="button" data-slide="prev">
+      <span class="fa fa-angle-left"></span>
+    </a>
+    <a class="right carousel-control" href="#gallery-carousel" role="button" data-slide="next">
+      <span class="fa fa-angle-right"></span>
+    </a>
+
+  </div>
+  <!-- /#hero-carousel -->
+</div>

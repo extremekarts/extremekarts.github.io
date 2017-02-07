@@ -1,0 +1,3 @@
+collections:
+  gallery_images:
+gems: [jekyll-coffeescript]
