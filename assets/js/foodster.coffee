@@ -152,7 +152,6 @@ $(window).resize ->
 #Any JS inside $(window).scroll(function() runs when the window is scrolled
 #====================================================
 $(window).scroll ->
-  console.log 1
   if $(this).scrollTop() > 100
     $(".scroll-up").fadeIn()
   else
