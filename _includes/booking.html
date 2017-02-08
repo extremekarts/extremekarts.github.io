@@ -1,0 +1,85 @@
+<section id="book">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading wow fadeInDown">Book a race</h2>
+        <h3 class="section-subheading wow fadeInDown">Tell us your name, and how many will be racing...</h3>
+      </div>
+    </div>
+    <!-- /.row -->
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 wow fadeInUp signup_form">
+
+        <form id="bookForm" class="form form-table text-center" name="race_booking" novalidate>
+          <h6>All fields required.</h6>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 form-group">
+              <label class="sr-only" for="first_name">first name</label>
+              <input class="form-control hint" type="text" id="first_name" name="first_name" placeholder="first name" required data-validation-required-message="Please enter your first name.">
+              <p class="help-block text-danger"></p>
+            </div>
+            <div class="col-lg-6 col-md-6 form-group">
+              <label class="sr-only" for="last_name">last name</label>
+              <input class="form-control hint" type="text" id="last_name" name="last_name" placeholder="last name" required data-validation-required-message="Please enter your last name.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 form-group">
+              <label class="sr-only" for="email">email</label>
+              <input class="form-control hint" type="email" id="email" name="email" placeholder="email@" required data-validation-required-message="Please enter your email address.">
+              <p class="help-block text-danger"></p>
+            </div>
+            <div class="col-lg-6 col-md-6 form-group">
+              <label class="sr-only" for="phone">phone</label>
+              <input class="form-control hint" type="text" id="phone" name="phone" placeholder="phone" required data-validation-required-message="Please enter your phone number.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 form-group">
+              <label class="sr-only" for="race_date">race date</label>
+              <input class="form-control datepicker hasDatepicker hint" type="text" id="race_date" name="race_date" placeholder="race date" required data-validation-required-message="Please enter your race date.">
+              <p class="help-block text-danger"></p>
+            </div>
+            <div class="col-lg-6 col-md-6 form-group">
+              <label class="sr-only" for="racers">number of racers</label>
+              <input class="form-control hint" type="text" id="racers" name="racers" placeholder="number of racers" required data-validation-required-message="Please enter number of racers.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 form-group">
+              <label class="sr-only" for="alt_reserv_date1">alternate reservation date</label>
+              <input class="form-control datepicker hasDatepicker hint" type="text" id="alt_reserv_date1" name="alt_reserv_date" placeholder="alternate reservation date" required data-validation-required-message="Please enter your alternate reservation date.">
+              <p class="help-block text-danger"></p>
+            </div>
+            <div class="col-lg-6 col-md-6 form-group">
+              <label class="sr-only" for="time1">time</label>
+              <input class="form-control timepicker ui-timepicker-input hint" type="text" id="race_time" name="time" placeholder="time" required="" autocomplete="off" data-validation-required-message="Please enter your arrival time.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <p>This is not a confirmation of a booking, we will contact you with a confirmation.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <div id="success"></div>
+              <button type="submit" class="btn btn-xl btn-primary">submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-sm-12">
+        <a href="#gallery" class="page-scroll">
+          <i class="fa fa-angle-double-down animated"></i>
+        </a>
+      </div>
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</section>

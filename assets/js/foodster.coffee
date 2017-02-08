@@ -80,14 +80,12 @@ $ ->
 
     submitSuccess: ($form, event) ->
       event.preventDefault()
-      name = $("input#first_name1").val() + " " + $("input#last_name1").val()
-      email = $("input#email1").val()
-      phone = $("input#phone1").val()
-      reservDate = $("input#reserv_date1").val()
-      numGuests = $("input#numb_guests1").val()
-      altDate = $("input#alt_reserv_date1").val()
-      bookingTime = $("input#time1").val()
-      message = $("textarea#message").val()
+      name = $("input#first_name").val() + " " + $("input#last_name").val()
+      email = $("input#email").val()
+      phone = $("input#phone").val()
+      raceDate = $("input#race_date").val()
+      racers = $("input#racers").val()
+      raceTime = $("input#race_time").val()
       $.ajax
         url: "././assets/php/mail/booking.php"
         type: "POST"
@@ -95,11 +93,9 @@ $ ->
           name: name
           phone: phone
           email: email
-          reservDate: reservDate
-          numGuests: numGuests
-          altDate: altDate
-          bookingTime: bookingTime
-          message: message
+          raceDate: raceDate
+          racers: racers
+          raceTime: raceTime
 
         cache: false
         success: ->
@@ -107,7 +103,7 @@ $ ->
           $("#success > .alert-success").html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append "</button>"
           $("#success > .alert-success").append "<strong>Your booking has been submitted. </strong>"
           $("#success > .alert-success").append "</div>"
-          $("#contactForm").trigger "reset"
+          $("#bookForm").trigger "reset"
           return
 
         error: ->
@@ -115,7 +111,7 @@ $ ->
           $("#success > .alert-danger").html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append "</button>"
           $("#success > .alert-danger").append "<strong>Sorry, the mail server is not responding. Please try again later!"
           $("#success > .alert-danger").append "</div>"
-          $("#contactForm").trigger "reset"
+          $("#bookForm").trigger "reset"
           return
 
       return
@@ -156,6 +152,7 @@ $(window).resize ->
 #Any JS inside $(window).scroll(function() runs when the window is scrolled
 #====================================================
 $(window).scroll ->
+  console.log 1
   if $(this).scrollTop() > 100
     $(".scroll-up").fadeIn()
   else

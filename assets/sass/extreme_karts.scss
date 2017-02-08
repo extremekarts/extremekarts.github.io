@@ -1,5 +1,3 @@
-@import "partials/_variables";
-@import "partials/_mixins";
 /* ----------------------
 // Foodster CSS
 // ----------------------
@@ -82,7 +80,7 @@
 }
 /* Animation */
 @-webkit-keyframes pulse {
-  0 {
+  0% {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
@@ -98,7 +96,7 @@
   }
 }
 @-moz-keyframes pulse {
-  0 {
+  0% {
     -moz-transform: scale(1);
     transform: scale(1);
   }
@@ -741,10 +739,11 @@ section {
 }
 
 .navbar-default {
-  background-color: $nav-default-bg;
+  background-color: #fff;
   border-color: transparent;
   border-radius: 0;
   position: relative;
+  transition: background-color 0.5s ease;
   /*.navbar-brand is used for the logo in the navigation */
   .navbar-brand {
     position: absolute;
@@ -932,6 +931,7 @@ section {
   top: 0;
   width: 100%;
   z-index: 99;
+  background-color: $nav-default-bg;
 }
 /* Header */
 header {
@@ -985,7 +985,7 @@ header {
     }
     /* add background images for each slide */
     .item_one {
-      background-image: url('../images/karts/Track10.jpg');
+      background-image: url('../images/karts/big_logo.jpg');
     }
 
     .item_two {
@@ -1115,7 +1115,7 @@ header {
   }
 }
 /* Restaurants section */
-#restaurants {
+#racingOptions {
   background: #e0ded9;
 
   a {
@@ -1797,9 +1797,9 @@ video {
   .navbar-default,
   .navbar-inverse {
     padding: 25px 0;
-    -webkit-transition: padding 0.3s;
-    -moz-transition: padding 0.3s;
-    transition: padding 0.3s;
+    -webkit-transition: padding 0.3s, background-color 0.5s;
+    -moz-transition: padding 0.3s, background-color 0.5s;
+    transition: padding 0.3s, background-color 0.5s;
     border: none;
 
     .navbar-brand {
@@ -1947,16 +1947,16 @@ body.pastel-gray {
   @include colorscheme($pastel-gray)
 }
 
+body.metallic-orange {
 body.metallic-red {
   @include colorscheme($metallic-red)
 }
 
-body.metallic-orange {
   @include colorscheme($metallic-orange)
 }
 
-body.metallic-yellow {
-  @include colorscheme($metallic-yellow)
+body {
+  @include colorscheme(#e2c000)
 }
 
 body.metallic-green {

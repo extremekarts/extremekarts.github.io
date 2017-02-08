@@ -1,3 +1,7 @@
 collections:
   gallery_images:
-gems: [jekyll-coffeescript]
+gems:
+  - jekyll-coffeescript
+sass:
+  sass_dir: ./assets/sass
+  style: compressed

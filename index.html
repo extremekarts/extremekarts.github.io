@@ -10,7 +10,7 @@ layout: hero
         <h2 class="section-heading">We boast New Zealand's only two level go kart track!</h2>
         <span class="section-divider">M</span>
         <h3 class="section-subheading text-muted">Not only do we have the two levels but we have a long fast straight, tighter more technical hair pin corners and also fast corners for passing</h3>
-        <a href="#unique" class="page-scroll">
+        <a href="#racingOptions" class="page-scroll">
           <i class="fa fa-angle-double-down animated"></i>
         </a>
       </div>
@@ -22,7 +22,7 @@ layout: hero
 <!-- End Introduction Section -->
 
 <!-- Racing type Section -->
-<section id="restaurants">
+<section id="racingOptions">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -49,7 +49,7 @@ layout: hero
     <!-- /.row -->
     <div class="row">
       <div class="col-lg-12">
-        <a href="#menus" class="page-scroll">
+        <a href="#book" class="page-scroll">
           <i class="fa fa-angle-double-down animated"></i>
         </a>
       </div>
@@ -60,93 +60,7 @@ layout: hero
 </section>
 <!-- End Restaurants Section -->
 
-<!-- Book Section -->
-<section id="book">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading wow fadeInDown">Book a race</h2>
-        <h3 class="section-subheading wow fadeInDown">Tell us your name, and how many will be racing...</h3>
-      </div>
-    </div>
-    <!-- /.row -->
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3 wow fadeInUp signup_form">
-
-        <form id="bookForm" class="form form-table text-center" name="table_reservation" novalidate>
-          <h6>All fields required.</h6>
-          <div class="row">
-            <div class="col-lg-6 col-md-6 form-group">
-              <label class="sr-only" for="first_name1">first name</label>
-              <input class="form-control hint" type="text" id="first_name1" name="first_name" placeholder="first name" required data-validation-required-message="Please enter your first name.">
-              <p class="help-block text-danger"></p>
-            </div>
-            <div class="col-lg-6 col-md-6 form-group">
-              <label class="sr-only" for="last_name1">last name</label>
-              <input class="form-control hint" type="text" id="last_name1" name="last_name" placeholder="last name" required data-validation-required-message="Please enter your last name.">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-6 col-md-6 form-group">
-              <label class="sr-only" for="email1">email</label>
-              <input class="form-control hint" type="email" id="email1" name="email" placeholder="email@" required data-validation-required-message="Please enter your email address.">
-              <p class="help-block text-danger"></p>
-            </div>
-            <div class="col-lg-6 col-md-6 form-group">
-              <label class="sr-only" for="phone1">phone</label>
-              <input class="form-control hint" type="text" id="phone1" name="phone" placeholder="phone" required data-validation-required-message="Please enter your phone number.">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-6 col-md-6 form-group">
-              <label class="sr-only" for="reserv_date1">race date</label>
-              <input class="form-control datepicker hasDatepicker hint" type="text" id="reserv_date1" name="reserv_date" placeholder="reservation date" required data-validation-required-message="Please enter your reservation date.">
-              <p class="help-block text-danger"></p>
-            </div>
-            <div class="col-lg-6 col-md-6 form-group">
-              <label class="sr-only" for="numb_guests1">number of racers</label>
-              <input class="form-control hint" type="text" id="numb_guests1" name="numb_guests" placeholder="number of guests" required data-validation-required-message="Please enter number of guests.">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-6 col-md-6 form-group">
-              <label class="sr-only" for="alt_reserv_date1">alternate reservation date</label>
-              <input class="form-control datepicker hasDatepicker hint" type="text" id="alt_reserv_date1" name="alt_reserv_date" placeholder="alternate reservation date" required data-validation-required-message="Please enter your alternate reservation date.">
-              <p class="help-block text-danger"></p>
-            </div>
-            <div class="col-lg-6 col-md-6 form-group">
-              <label class="sr-only" for="time1">time</label>
-              <input class="form-control timepicker ui-timepicker-input hint" type="text" id="time1" name="time" placeholder="time" required="" autocomplete="off" data-validation-required-message="Please enter your arrival time.">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 col-md-12">
-              <p>This is not a confirmation of a booking, we will contact you with a confirmation.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 col-md-12">
-              <div id="success"></div>
-              <button type="submit" class="btn btn-xl btn-primary">submit</button>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="col-sm-12">
-        <a href="#gallery" class="page-scroll">
-          <i class="fa fa-angle-double-down animated"></i>
-        </a>
-      </div>
-    </div>
-    <!-- /.row -->
-  </div>
-  <!-- /.container -->
-</section>
-<!-- End Book Section -->
+{% include booking.html %}
 
 {% include gallery.html %}
 
