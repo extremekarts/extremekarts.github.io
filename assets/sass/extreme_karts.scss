@@ -1522,6 +1522,30 @@ footer {
 /*
 // Social Buttons
 */
+//Didnt see these in use on the site.  Morgan added below on 160917:
+.social-icon-container {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+
+}
+
+.social-link {
+  cursor: pointer;
+  display: flex;
+  width: 42px;
+  height: 42px;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+
+
+
+
 ul.social-buttons {
   margin-bottom: 0;
 
