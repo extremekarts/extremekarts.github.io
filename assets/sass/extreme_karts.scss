@@ -983,7 +983,12 @@ header {
         font-size: 28px;
       }
     }
+
+    .carousel-inner {
+      background-image: url('../images/karts/big_logo.jpg');
+    }
     /* add background images for each slide */
+    /*
     .item_one {
       background-image: url('../images/karts/big_logo.jpg');
     }
@@ -995,6 +1000,7 @@ header {
     .item_three {
       background-image: url('../images/karts/big_logo.jpg');
     }
+    */
 
     .seafood_one {
       background-image: url('../images/seafood_background_1.jpg');
