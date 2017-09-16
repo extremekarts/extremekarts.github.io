@@ -1528,6 +1528,7 @@ footer {
   right: 10px;
   top: 10px;
   display: flex;
+  z-index: 100;
   flex-flow: column nowrap;
 
 }
@@ -1540,7 +1541,8 @@ footer {
   margin: 5px;
   z-index: 100;
   &:hover {
-    opacity: 0.8;
+    //opacity: 0.8;
+    transform: scale(1.05);
   }
 }
 
