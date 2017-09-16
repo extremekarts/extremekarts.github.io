@@ -1535,8 +1535,10 @@ footer {
 .social-link {
   cursor: pointer;
   display: flex;
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  z-index: 100;
   &:hover {
     opacity: 0.8;
   }
